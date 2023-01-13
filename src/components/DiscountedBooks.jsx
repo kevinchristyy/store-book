@@ -2,13 +2,13 @@ import React from "react";
 import Book from "./ui/Book";
 import { books } from "../data";
 
-function Features() {
+function DiscountedBooks() {
   return (
     <section id="recent">
-      <div className="container">
+      <div className="discounted__container">
         <div className="row">
           <h2 className="section__title">
-            Discounted <span className="purple">Books</span>
+            Discounted <span className="gold">Books</span>
           </h2>
           <div className="books">
             {books
@@ -23,6 +23,6 @@ function Features() {
       </div>
     </section>
   );
-};
+}
 
-export default Features;
+export default DiscountedBooks;

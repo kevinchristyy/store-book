@@ -6,8 +6,8 @@ function Explore() {
     <section id="explore">
       <div className="container">
         <div className="row row__column">
-          <h2>
-            Explore more <span className="purple">Books</span>
+          <h2 className="explore__title">
+            Explore more <span className="gold">Books</span>
           </h2>
           <Link to="/books">
             <button className="btn">Explore books</button>

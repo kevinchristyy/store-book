@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import EmptyCart from "../assets/empty_cart.svg";
 
-const Cart = ({ cart, updateCart, removeItem, totals }) => {
+function Cart({ cart, updateCart, removeItem, totals }) {
   return (
     <div id="books__body">
       <main id="books__main">
@@ -65,7 +65,9 @@ const Cart = ({ cart, updateCart, removeItem, totals }) => {
                 {(!cart || !cart.length) && (
                   <div className="cart__empty">
                     <img className="cart__empty--img" src={EmptyCart} alt="" />
-                    <h2>You don't have any books in your cart!</h2>
+                    <h2 className="cart__nothing">
+                      You don't have any books in your cart!
+                    </h2>
                     <Link to="/books">
                       <button className="btn">Browse books</button>
                     </Link>
@@ -87,7 +89,10 @@ const Cart = ({ cart, updateCart, removeItem, totals }) => {
                   <span>Total</span>
                   <span>${totals.total.toFixed(2)}</span>
                 </div>
-                <button className="btn btn__checkout no-cursor" onClick={() => alert(`Haven't got around to doing this :(`)}>
+                <button
+                  className="btn btn__checkout no-cursor"
+                  onClick={() => alert(`Haven't got around to doing this :(`)}
+                >
                   Proceed to checkout
                 </button>
               </div>
@@ -97,6 +102,6 @@ const Cart = ({ cart, updateCart, removeItem, totals }) => {
       </main>
     </div>
   );
-};
+}
 
 export default Cart;

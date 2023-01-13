@@ -43,6 +43,7 @@ function Books({ books: initialbooks }) {
                   All Books
                 </h2>
                 <select
+                  className="sort__color"
                   id="filter"
                   defaultValue="DEFAULT"
                   onChange={(event) => filterBooks(event.target.value)}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/Library.svg";
+import Logo from "../assets/RR.svg";
 
 function Footer() {
   return (
@@ -24,7 +24,9 @@ function Footer() {
               Cart
             </Link>
           </div>
-          <div className="footer__copyright">Copyright &copy; 2023 Library</div>
+          <div className="footer__copyright">
+            Copyright &copy; 2023 ReadBle
+          </div>
         </div>
       </div>
     </footer>
